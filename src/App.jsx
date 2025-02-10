@@ -24,7 +24,7 @@ function App() {
     }
 
     const totalPayment = amount + (amount * rate * term) / 100;
-    const monthlyPayment = totalPayment / term;
+    const monthlyPayment = totalPayment / (term*12);
     setPayment((prev) => ({
       ...prev,
       calculations: { monthlyPayment, totalPayment },

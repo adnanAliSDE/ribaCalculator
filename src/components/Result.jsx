@@ -16,17 +16,17 @@ function Result() {
       <div className="space-y-4">
         <div className="flex justify-between items-center border-b border-white/40 pb-2">
           <p className="text-sm text-white/80">Monthly Payment</p>
-          <p className="text-lg font-semibold">${calculations.monthlyPayment.toFixed(2)}</p>
+          <p className="text-lg font-semibold">₹{calculations.monthlyPayment.toFixed(2)}</p>
         </div>
 
         <div className="flex justify-between items-center border-b border-white/40 pb-2">
           <p className="text-sm text-white/80">Total Payment</p>
-          <p className="text-lg font-semibold">${calculations.totalPayment.toFixed(2)}</p>
+          <p className="text-lg font-semibold">₹{calculations.totalPayment.toFixed(2)}</p>
         </div>
 
         <div className="flex justify-between items-center">
           <p className="text-sm text-white/80">Total Interest</p>
-          <p className="text-lg font-semibold">${interest.toFixed(2)}</p>
+          <p className="text-lg font-semibold">₹{interest.toFixed(2)}</p>
         </div>
       </div>
     </section>
